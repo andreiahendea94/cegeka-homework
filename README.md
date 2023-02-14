@@ -6,20 +6,20 @@ I also recommend using Linux, because it's way faster to run the project.
 
 ## Installation
 
-- [Download](https://www.docker.com/products/docker-desktop/) and Install Docker for [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/)
--- For Windows users: Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) and [download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu) from Microsoft Store
+* [Download](https://www.docker.com/products/docker-desktop/) and Install Docker for [Windows](https://docs.docker.com/desktop/install/windows-install/) or [Linux](https://docs.docker.com/desktop/install/linux-install/)
+  - For Windows users: Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) and [download Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#3-download-ubuntu) from Microsoft Store
 
 ## Run the project
-- Clone the project
-- In the root folder of the project run the command `docker-compose up`
-- Open a new tab in your favorite browser with the URL `http://localhost:8000/`. The port `:8000` is the default one, however if it is not available the output from the `docker-compose up` command will tell you the port the server is running on.
+* Clone the project
+* In the root folder of the project run the command `docker-compose up`
+* Open a new tab in your favorite browser with the URL `http://localhost:8000/`. The port `:8000` is the default one, however if it is not available the output from the `docker-compose up` command will tell you the port the server is running on.
 
 ## Available endpoints
-- `/personal`\
+* `/personal`\
 Sample URL: [http://localhost:8000/personal/](http://localhost:8000/personal/)\
 HTTP Request Type: GET\
 URL GET Parameters: N/A\
-Response type: application/json\
+Response type: `application/json`\
 Response format:
 ```{
     "address": "Street Brooklyn 99, ap. 10, floor 2",
@@ -32,11 +32,11 @@ Response format:
 }
 ```
 
-- `/education`\
+* `/education`\
 Sample URL: [http://localhost:8000/education/](http://localhost:8000/education/)\
 HTTP Request Type: GET\
 URL GET Parameters: N/A\
-Response type: application/json\
+Response type: `application/json`\
 Response format:
 ```
 {
@@ -47,11 +47,11 @@ Response format:
 }
 ```
 
-- `/experience`\
+* `/experience`\
 Sample URL: [http://localhost:8000/experience/](http://localhost:8000/experience/)\
 HTTP Request Type: GET\
 URL GET Parameters: N/A\
-Response type: application/json\
+Response type: `application/json`\
 Response format:
 ```
 {
@@ -75,14 +75,14 @@ Response format:
 ```
 
 ## How to run CLI commands
-- Check if the Docker container is running using `docker ps`. If it is not then start it using the command `docker-compose up`
-- Connect to the `web` docker using the command `docker exec -it web sh`
-- Run the command `flask --help` to get the list of available commands
-- Currently there are 3 custom commands implemented:
--- `get-personal-details`
--- `get-education`
--- `get-experience`
-- Run one of these commands in the `web` Docker container using the command `flask custom-command`. Where `custom-command` is one of the custom commands presented earlier.
+* Check if the Docker container is running using `docker ps`. If it is not then start it using the command `docker-compose up`
+* Connect to the `web` docker using the command `docker exec -it web sh`
+* Run the command `flask --help` to get the list of available commands
+* Currently there are 3 custom commands implemented:
+  - `get-personal-details`
+  - `get-education`
+  - `get-experience`
+* Run one of these commands in the `web` Docker container using the command `flask custom-command`. Where `custom-command` is one of the custom commands presented earlier.
 
 Example: `flask get-personal-details`
 
