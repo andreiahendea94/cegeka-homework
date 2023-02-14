@@ -1,0 +1,19 @@
+{
+  "surname": "Williams",
+  "name": "John",
+  "education": [
+    "January 2019 Politehnica University of Bucharest",
+    "August 2014 National College 'Mihai Viteazu'"
+  ],
+  "experience": {
+    "ING Bank": "Renovated complete UI to make it more modern, user-friendly, maintainable and optimised for bank use.\nShared the UI structure and guidelines to be incorporated, with development team of around 50 members.",
+    "TrustBank-CBS": "Designed and developed modern and responsive UI of entire application.\nMade required graphics for the project in photoshop."
+  },
+  "skills": "Python - Less than 1 year, AWS - Less than 1 year, Javascript - Less than 1 year, CSS3 - 6 months",
+  "phone": "+401235578",
+  "address": "Street Brooklyn 99, ap. 10, floor 2",
+  "country": "United States",
+  "dateOfBirth": "1980-10-12",
+  "hobbies": "Guitar, Reading, Hiking",
+  "languages": "English, Spanish"
+}
