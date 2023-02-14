@@ -12,16 +12,16 @@ I also recommend using Linux, because it's way faster to run the project.
 ## Run the project
 - Clone the project
 - In the root folder of the project run the command `docker-compose up`
-- Open a new tab in your favorite browser with the URL `http://localhost:8000/`. The port `:8000` is the default one however if it is not available the output from the `docker-compose up` command will tell you the port the server is running on.
+- Open a new tab in your favorite browser with the URL `http://localhost:8000/`. The port `:8000` is the default one, however if it is not available the output from the `docker-compose up` command will tell you the port the server is running on.
 
 ## Available endpoints
 - `/personal`
-Sample URL: http://localhost:8000/personal/
-HTTP Request Type: GET
-URL GET Parameters: N/A
-Response type: application/json
-Response format:
-`{
+Sample URL: [http://localhost:8000/personal/](http://localhost:8000/personal/)\
+HTTP Request Type: GET\
+URL GET Parameters: N/A\
+Response type: application/json\
+Response format:\
+```{
     "address": "Street Brooklyn 99, ap. 10, floor 2",
     "country": "United States",
     "dateOfBirth": "1980-10-12",
@@ -30,47 +30,50 @@ Response format:
     "languages": "English, Spanish",
     "phone": "+401235578"
 }
-`
+```
 
 - `/education`
-Sample URL: http://localhost:8000/education/
-HTTP Request Type: GET
-URL GET Parameters: N/A
-Response type: application/json
-Response format:
-`{
-"education": {
-"01-01-2019": "Politehnica University of Bucharest",
-"01-08-2014": "National College 'Mihai Viteazu'"
+Sample URL: [http://localhost:8000/education/](http://localhost:8000/education/)\
+HTTP Request Type: GET\
+URL GET Parameters: N/A\
+Response type: application/json\
+Response format:\
+```
+{
+  "education": {
+  "01-01-2019": "Politehnica University of Bucharest",
+  "01-08-2014": "National College 'Mihai Viteazu'"
+  }
 }
-}`
+```
 
 - `/experience`
-Sample URL: http://localhost:8000/experience/
-HTTP Request Type: GET
-URL GET Parameters: N/A
-Response type: application/json
-Response format:
-`
+Sample URL: [http://localhost:8000/experience/](http://localhost:8000/experience/)\
+HTTP Request Type: GET\
+URL GET Parameters: N/A\
+Response type: application/json\
+Response format:\
+```
 {
-"experience": {
-"ING Bank": [
-"Renovated complete UI to make it more modern, user-friendly, maintainable and optimised for bank use.",
-"Shared the UI structure and guidelines to be incorporated, with development team of around 50 members."
-],
-"TrustBank-CBS": [
-"Designed and developed modern and responsive UI of entire application.",
-"Made required graphics for the project in photoshop."
-]
-},
-"skills": [
-"Python - Less than 1 year",
-"AWS - Less than 1 year",
-"Javascript - Less than 1 year",
-"CSS3 - 6 months"
-]
+  "experience": {
+  "ING Bank": [
+    "Renovated complete UI to make it more modern, user-friendly, maintainable and optimised for bank use.",
+    "Shared the UI structure and guidelines to be incorporated, with development team of around 50 members."
+  ],
+  "TrustBank-CBS": [
+    "Designed and developed modern and responsive UI of entire application.",
+    "Made required graphics for the project in photoshop."
+  ]
+  },
+  "skills": [
+    "Python - Less than 1 year",
+    "AWS - Less than 1 year",
+    "Javascript - Less than 1 year",
+    "CSS3 - 6 months"
+  ]
 }
-`
+```
+
 ## How to run CLI commands
 - Check if the Docker container is running using `docker ps`. If it is not then start it using the command `docker-compose up`
 - Connect to the `web` docker using the command `docker exec -it web sh`
