@@ -15,12 +15,12 @@ I also recommend using Linux, because it's way faster to run the project.
 - Open a new tab in your favorite browser with the URL `http://localhost:8000/`. The port `:8000` is the default one, however if it is not available the output from the `docker-compose up` command will tell you the port the server is running on.
 
 ## Available endpoints
-- `/personal`
+- `/personal`\
 Sample URL: [http://localhost:8000/personal/](http://localhost:8000/personal/)\
 HTTP Request Type: GET\
 URL GET Parameters: N/A\
 Response type: application/json\
-Response format:\
+Response format:
 ```{
     "address": "Street Brooklyn 99, ap. 10, floor 2",
     "country": "United States",
@@ -32,12 +32,12 @@ Response format:\
 }
 ```
 
-- `/education`
+- `/education`\
 Sample URL: [http://localhost:8000/education/](http://localhost:8000/education/)\
 HTTP Request Type: GET\
 URL GET Parameters: N/A\
 Response type: application/json\
-Response format:\
+Response format:
 ```
 {
   "education": {
@@ -47,12 +47,12 @@ Response format:\
 }
 ```
 
-- `/experience`
+- `/experience`\
 Sample URL: [http://localhost:8000/experience/](http://localhost:8000/experience/)\
 HTTP Request Type: GET\
 URL GET Parameters: N/A\
 Response type: application/json\
-Response format:\
+Response format:
 ```
 {
   "experience": {
